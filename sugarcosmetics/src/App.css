@@ -1,38 +1,118 @@
-.App {
+:root {
+  --light-black: rgb(48, 48, 48)
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* //////////////////// navbar //////////////////// */
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 13px 0px;
+}
+
+.logo-sec {
+  width: 16%;
+  padding: 0px 20px;
+}
+
+.logo-sec img {
+  width: 100%;
+}
+
+.search-sec {
+  width: 47%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-sec input {
+  width: 80%;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px 0px 0px 5px;
+  background-color: var(--light-black);
+  outline: none;
+}
+
+.search-sec button {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.search-sec img {
+  width: 20%;
+  margin-right: 2px;
+}
+
+.login-sec {
+  width: 30%;
+}
+
+.login-sec button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: black;
+  font-weight: bold;
+}
+
+.login-sec button img {
+  width: 12%;
+  margin-right: 5px;
+}
+
+.cart-sec {
+  width: 10%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cart-sec img {
+  width: 15%;
+  margin: 0% 3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ////////////// menu /////////////////// */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  background-color: var(--light-black);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 15px 40px;
+}
+
+.menu div {
+  margin-right: 40px;
   color: white;
+  border-bottom: 3px solid var(--light-black);
 }
 
-.App-link {
-  color: #61dafb;
+.menu div:hover {
+  border-bottom: 3px solid rgb(255, 81, 139);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* //////////////// position //////////////// */
+
+.position {
+  position: sticky;
+  top: 0;
+}
+
+/* /////////// slider ///////////////// */
+
+.slider img {
+  width: 100%;
 }
