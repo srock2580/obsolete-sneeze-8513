@@ -1,5 +1,6 @@
 :root {
-  --light-black: rgb(48, 48, 48)
+  --light-black: rgb(48, 48, 48);
+  --pink: rgb(255, 81, 139)
 }
 
 * {
@@ -7,6 +8,10 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: lavender;
 }
 
 /* //////////////////// navbar //////////////////// */
@@ -98,6 +103,7 @@
   margin-right: 40px;
   color: white;
   border-bottom: 3px solid var(--light-black);
+  cursor: pointer;
 }
 
 .menu div:hover {
@@ -109,6 +115,44 @@
 .position {
   position: sticky;
   top: 0;
+  z-index: 10;
+}
+
+/* //////////////// item ///////////////// */
+
+.item {
+  text-align: center;
+  background-color: white;
+  padding: 0px 50px;
+  width: 250px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: small;
+  margin-bottom: 30px;
+}
+
+.item button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 /* /////////// slider ///////////////// */
@@ -116,3 +160,315 @@
 .slider img {
   width: 100%;
 }
+
+/* /////////////////// bestseller ///////////////////// */
+
+.bestseller {
+  background-color: #06035e;
+  padding: 30px 0px 60px 0px;
+  margin-top: 50px;
+}
+
+.bestseller h3 {
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.bestseller-item-sec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bestseller-item-sec > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bestseller-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.arrow-button {
+  color: var(--pink);
+  font-weight: bold;
+  font-size:x-large;
+  border-radius: 50%;
+  padding: 0px 7px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* /////////////////// hot deals ///////////////////// */
+
+.hot-deal {
+  padding: 30px 0px 60px 0px;
+  margin-top: 50px;
+}
+
+.hot-deal h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hot-deal-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hot-deal-item img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+/* /////////////////// just-in ///////////////////// */
+
+.just-in {
+  padding: 30px 0px 60px 0px;
+}
+
+.just-in h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.just-in-item-sec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.just-in-item-sec > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.just-in-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.arrow-button {
+  color: var(--pink);
+  font-weight: bold;
+  font-size:x-large;
+  border-radius: 50%;
+  padding: 0px 7px;
+  background-color: rgb(202, 202, 255);
+  border: none;
+  cursor: pointer;
+}
+
+/* /////////////////// banner ///////////////////// */
+
+.banner {
+  padding: 30px 0px 60px 0px;
+}
+
+.banner h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.banner-item {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-item img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* /////////////////// top pics ///////////////////// */
+
+.top-pics {
+  padding: 30px 0px 60px 0px;
+}
+
+.top-pics h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.top-pics-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-pics-item img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+/* /////////////////// buy-now ///////////////////// */
+
+.buy-now {
+  padding: 30px 0px 60px 0px;
+}
+
+.buy-now h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.buy-now-item-sec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buy-now-item-sec > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buy-now-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.arrow-button {
+  color: var(--pink);
+  font-weight: bold;
+  font-size:x-large;
+  border-radius: 50%;
+  padding: 0px 7px;
+  background-color: rgb(202, 202, 255);
+  border: none;
+  cursor: pointer;
+}
+
+/* /////////////////// refer ///////////////////// */
+
+.refer {
+  padding: 30px 0px 60px 0px;
+}
+
+.refer h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.refer-item {
+  display: flex;
+  justify-content: center;
+}
+
+.refer-item img {
+  width: 95%;
+  border-radius: 10px;
+}
+
+/* /////////////////// touch sec ///////////////////// */
+
+.touch {
+  padding: 30px 0px 60px 0px;
+}
+
+.touch h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.touch p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.touch div {
+  text-align: center;
+}
+
+.touch input {
+  width: 40%;
+  padding: 10px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.touch button {
+  padding: 10px 20px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ////////////// footer /////////////////// */
+
+.footer {
+  background-color: black;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-links > div {
+  background-color: gray;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.social-links > div:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.social-links > div > img {
+  width: 100%;
+}
+
+.footer-menu {
+  text-align: center;
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.footer-menu a {
+  color: white;
+  font-weight: bold;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+/* /////////////// makeup //////////////// */
+
+/* .makeup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+} */
