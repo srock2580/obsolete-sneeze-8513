@@ -6,6 +6,7 @@ import { Navbar } from '../Components/Navbar'
 import { Menu } from '../Components/Menu'
 import { Brushes } from './Brushes'
 import { Makeup } from './Makeup'
+import { Footer } from '../Components/Footer'
 
 export const AllRoutes = () => {
   return <div>
@@ -20,5 +21,6 @@ export const AllRoutes = () => {
       <Route path='/makeup' element={<Makeup/>}/>
       <Route path='/brushes' element={<Brushes/>}/>
     </Routes>
+    <Footer/>
   </div>
 }
