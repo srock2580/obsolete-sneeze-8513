@@ -45,6 +45,7 @@ body {
   border-radius: 5px 0px 0px 5px;
   background-color: var(--light-black);
   outline: none;
+  color: lavender
 }
 
 .search-sec button {
@@ -56,6 +57,7 @@ body {
   background-color: white;
   border: 1px solid white;
   border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
 }
 
 .search-sec img {

@@ -5,7 +5,7 @@ import { Item } from "../Components/Item";
 import BrushesData from "../brushesData.json";
 
 export const Brushes = () => {
-  const [data, setData] = useState(BrushesData);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const updateData = (x) => {
@@ -38,8 +38,8 @@ export const Brushes = () => {
   };
 
   useEffect(() => {
-    setLoading(false);
-  });
+    updateData(BrushesData)
+  }, []);
 
   return (
     <div>

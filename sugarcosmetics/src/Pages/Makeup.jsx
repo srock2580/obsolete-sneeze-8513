@@ -5,7 +5,7 @@ import { Loader } from "../Components/Loader";
 import makeupData from "../makeupData.json";
 
 export const Makeup = () => {
-  const [data, setData] = useState(makeupData)
+  const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
 
   const updateData = x => {
@@ -38,8 +38,8 @@ export const Makeup = () => {
   }
 
   useEffect(() => {
-    setLoading(false)
-  })
+    updateData(makeupData)
+  }, [])
 
   return (
     <div className="makeup">
